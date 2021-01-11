@@ -27,4 +27,10 @@ config ZMK_BLE
 config ZMK_USB
 	default y
 
+config BOARD_POLILLA_CHARGER
+	default y
+
+config ZMK_BATTERY_VOLTAGE_DIVIDER
+	default y
+
 endif # BOARD_POLILLA_W
