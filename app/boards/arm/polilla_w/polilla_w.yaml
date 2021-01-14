@@ -1,5 +1,5 @@
 identifier: polilla_w
-name: Polilla wireless
+name: Polilla
 type: mcu
 arch: arm
 toolchain:

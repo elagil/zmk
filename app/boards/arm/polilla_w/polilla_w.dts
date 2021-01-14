@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-	model = "Polilla wireless";
+	model = "Polilla";
 
 	chosen {
 		zephyr,code-partition = &code_partition;
@@ -36,25 +36,25 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 		label = "KSCAN";
 		diode-direction = "row2col";
 		row-gpios
-			= <&gpio0 9  GPIO_ACTIVE_HIGH>
-			, <&gpio1 2  GPIO_ACTIVE_HIGH>
-			, <&gpio1 4  GPIO_ACTIVE_HIGH>
+			= <&gpio0 10 GPIO_ACTIVE_HIGH>
 			, <&gpio1 6  GPIO_ACTIVE_HIGH>
-			, <&gpio1 10 GPIO_ACTIVE_HIGH>
+			, <&gpio1 4  GPIO_ACTIVE_HIGH>
+			, <&gpio1 2  GPIO_ACTIVE_HIGH>
+			, <&gpio0 9  GPIO_ACTIVE_HIGH>
 			;
 		col-gpios
-			= <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			= <&gpio0 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&gpio0 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
 

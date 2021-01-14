@@ -5,8 +5,8 @@
 
 if BOARD_POLILLA_W
 
-config BOARD
-	default "polilla_w"
+config ZMK_KEYBOARD_NAME
+	default "Polilla"
 
 if USB
 
