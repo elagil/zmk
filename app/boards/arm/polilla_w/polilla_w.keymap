@@ -71,14 +71,14 @@
 
 		system_layer {
 // ,-----------------------------------,              ,-----------------------------------,
-// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |              | --- | --- | --- | --- | --- |BTDIS|
+// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |              | --- | --- | --- | --- | --- | --- |
 // | --- | --- | --- | --- | --- | --- |              | --- | --- | --- | --- | --- | --- |
 // | --- | --- | --- | --- | --- | --- |-----,  ,-----| --- | --- | --- | --- | --- | --- |
 // | --- | --- | --- | --- | --- | --- |BOOT |  | RST | --- | --- | --- | --- | --- | --- |
 // '-----------| --- | --- | --- | --- | --- |  | --- | --- | --- |  T  | --- |-----------'
 //             '-----------------------------'  '-----------------------------'
 			bindings = < 
-&bt BT_CLR	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &none      	&none      	&none      	&none      	&none     	&bt BT_DIS
+&bt BT_CLR	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &none      	&none      	&none      	&none      	&none     	&none
 &none		&none 		&none 		&none 		&none 		&none                    			&none       &none 		&none     	&none 		&none  		&none
 &none       &none       &none  		&none    	&none		&none                            	&none    	&none    	&none    	&none   	&none     	&none
 &none   	&none       &none 		&none 		&none 		&none     	&bootloader &reset      &none       &none 		&none    	&none 		&none    	&none
