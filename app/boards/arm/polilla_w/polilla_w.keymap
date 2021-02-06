@@ -41,14 +41,14 @@
 // | --- | --- | --- | --- | --- | --- |              | --- |  7  |  8  |  9  | --- | F12 |
 // |S-TAB| --- |PRETB| DEL |NXTTB| --- |-----,  ,-----|  +  |  4  |  5  |  6  |  *  | --- |
 // |  T  | --- | --- | --- | --- | --- | --- |  |KPENT|  -  |  1  |  2  |  3  |  /  |  T  |
-// '-----------|BTDIS| --- |  T  | --- | --- |  | --- |  0  | --- | --- | NLK |-----------'
+// '-----------| --- | --- |  T  | --- | --- |  | --- |  0  | --- | --- | NLK |-----------'
 //             '-----------------------------'  '-----------------------------'
 			bindings = <
 &none		&kp F1     	&kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11
 &none		&none 		&none 		&none 		&none 		&none                   			&none       &kp KP_N7   &kp KP_N8   &kp KP_N9   &none       &kp F12
 &kp LS(TAB) &none       &kp LC(PG_DN) &kp DEL   &kp LC(PG_UP) &none                           	&kp KP_PLUS &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MULTIPLY &none
 &trans   	&none       &none       &none       &none       &none       &none 		&kp KP_ENTER &kp KP_MINUS &kp KP_N1 &kp KP_N2   &kp KP_N3  	&kp KP_DIVIDE &trans
-                        &bt BT_DIS  &none  		&trans      &none      	&none      	&none       &kp KP_N0   &none     	&none       &kp KP_NLCK
+                        &none  		&none  		&trans      &none      	&none      	&none       &kp KP_N0   &none     	&none       &kp KP_NLCK
 			>;
 		};
 
